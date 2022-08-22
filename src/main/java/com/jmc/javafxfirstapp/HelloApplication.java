@@ -24,7 +24,7 @@ public class HelloApplication extends Application {
         Button button = new Button("Click Me");
         Button button1 = new Button("Exit Explicitly");
         button.setOnAction(e -> text.setText("Welcome to JavaFX Application !"));
-        button.addEventHandler(MouseEvent.MOUSE_CLICKED, mouseEvent -> text.setText("Thank you for clicking the button !!"));
+        button.addEventHandler(MouseEvent.MOUSE_CLICKED, mouseEvent -> text.setText("Thank you for clicking the button!!"));
         root.getChildren().addAll(text, button, button1);
         Scene scene = new Scene(root, 350, 300);
         stage.setScene(scene);
